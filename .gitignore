@@ -40,3 +40,4 @@ Session.vim
 # Build results
 lib
 docs
+package-lock.json
