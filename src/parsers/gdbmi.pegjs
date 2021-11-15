@@ -95,7 +95,16 @@ AsyncClass
   = "stopped" / String
 
 Const "c-string"
-  = "\"" chars:Char* "\"" { return decodeURIComponent(chars.join('')) }
+  = "\"" chars:Char* "\"" { 
+    try {
+      return decodeURIComponent(chars.join(''))
+    } catch (e) {
+      console.error(`The following string is not parsable by decodeURIComponent: ${chars.join('')}`, e);
+      let str = chars.join('');
+      let spl = str.split(' ').map((e) => {try {return decodeURIComponent(e)} catch (err) {return e}});
+      return spl.join(' ');
+    }
+  }
 
 Char "char"
   = [^%\\\"] / "%" { return '%25' }
