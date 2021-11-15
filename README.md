@@ -1,5 +1,5 @@
 ## Important Note
-This project was originally created by a different group of people. I (TheIceCreamBear) and maintaining this fork of a fork as this project is needed for something I am developing for university. This will not be getting much active development unless things drastically change. This derivation of the original is available on the NPM registry under `@theicecreambear/gdb-js`.
+This project was originally created by a different group of people. I (TheIceCreamBear) am maintaining this fork of a fork as this project is needed for something I am developing for university. This will not be getting much active development unless things drastically change. This derivation of the original is available on the NPM registry under `@theicecreambear/gdb-js`.
 
 # gdb-js [![Build Status](https://travis-ci.org/taskcluster/gdb-js.svg?branch=master)](https://travis-ci.org/taskcluster/gdb-js)
 
